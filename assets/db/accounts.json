@@ -1,0 +1,164 @@
+[
+    {
+        "user": "@3",
+        "personal": {
+            "fullname": {
+                "first": "fname",
+                "middle": "mname",
+                "last": "lname"
+            },
+            "birthday": {
+                "month": "bmonth",
+                "day": "bday",
+                "year": "byear"
+            },
+            "address": {
+                "houseNo": "hno",
+                "street1": "st1",
+                "city": "cty",
+                "zip": "zzz",
+                "province": "prov"
+            },
+            "sex": "sx"
+        },
+        "credential": {
+            "email": "em",
+            "password": "psw"
+        },
+        "applicationStatus": [],
+        "savedPosts": [],
+        "posts": [],
+        "profile": {
+            "workExperience": "wxo",
+            "education": "@@@",
+            "introduction": "$$$",
+            "portfolioLink": "%%%"
+        },
+        "messages": [],
+        "notifications": []
+    }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[
+    {
+        "personal": {
+            "fullname": {
+                "first": "fname",
+                "middle": "mname",
+                "last": "lname"
+            },
+            "birthday": {
+                "month": "bmonth",
+                "day": "bday",
+                "year": "byear"
+            },
+            "address": {
+                "houseNo": "hno",
+                "street1": "st1",
+                "city": "cty",
+                "zip": "zzz",
+                "province": "prov"
+            },
+            "sex": "sx"
+        },
+        "credential": {
+            "email": "em",
+            "password": "psw"
+        },
+        "applicationStatus": [
+            {
+                "jobPosition": "jp",
+                "dateApplied": "dtApp",
+                "status": "pp"
+            }
+        ],
+        "savedPosts": [
+            "svp"
+        ],
+        "posts": [
+            {
+                "postID": "#$%",
+                "imageSource": "<>",
+                "timePosted": "#@@"
+            }
+        ],
+        "profile": {
+            "workExperience": "wxo",
+            "education": "@@@",
+            "introduction": "$$$",
+            "portfolioLink": "%%%"
+        },
+        "messages": [
+            {
+                "sender": "&&&",
+                "message": "#323",
+                "time": "#PO"
+            }
+        ],
+        "notifications": [
+            {
+                "title": "***",
+                "text": "qwerty",
+                "time": "!23"
+            }
+        ]
+    }
+]
+
+
+
+
+{
+    "user": "@3",
+    "personal": {
+        "fullname": {
+            "first": "fname",
+            "middle": "mname",
+            "last": "lname"
+        },
+        "birthday": {
+            "month": "bmonth",
+            "day": "bday",
+            "year": "byear"
+        },
+        "address": {
+            "houseNo": "hno",
+            "street1": "st1",
+            "city": "cty",
+            "zip": "zzz",
+            "province": "prov"
+        },
+        "sex": "sx"
+    },
+    "credential": {
+        "email": "em",
+        "password": "psw"
+    },
+    "applicationStatus": [],
+    "savedPosts": [],
+    "posts": [],
+    "profile": {
+        "workExperience": "wxo",
+        "education": "@@@",
+        "introduction": "$$$",
+        "portfolioLink": "%%%"
+    },
+    "messages": [],
+    "notifications": []
+}

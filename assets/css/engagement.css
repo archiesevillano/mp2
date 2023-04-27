@@ -1,0 +1,1093 @@
+body,
+button {
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-content {
+    display: none;
+}
+
+/* ENGAGEMENT CONTENT */
+.engagement-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: flex-end; */
+}
+
+/* SIDE NAVIGATION */
+.side-navigation {
+    width: 300px;
+    height: 90vh;
+    background: var(--milk);
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.side-navigation ul {
+    padding: 0 10px;
+}
+
+.side-navigation ul li {
+    color: var(--dark);
+    text-decoration: none;
+    list-style-type: none;
+    padding: 13px 5px;
+    margin: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+.side-navigation li:hover {
+    background-color: var(--fade);
+}
+
+.side-navigation li:active {
+    filter: brightness(90%);
+}
+
+.side-navigation li.active {
+    color: var(--primary);
+}
+
+.side-navigation li:before {
+    content: '';
+    background-color: var(--primary);
+    position: absolute;
+    top: 50%;
+    left: -100px;
+    opacity: 0;
+    width: 4px;
+    height: 100%;
+    transform: translateY(-50%) scaleY(0.7);
+    transition: all 0.2s ease-in-out;
+}
+
+.side-navigation li.active::before {
+    left: 0px;
+    opacity: 1;
+}
+
+.side-navigation i {
+    padding-right: 5px;
+    font-size: 18px;
+    display: inline-block;
+    padding: 3px 10px;
+    transform: translateY(3px);
+    margin-right: 8px;
+}
+
+.side-navigation hr {
+    border: 1px solid var(--secondary);
+    opacity: 0.4;
+    padding: 0;
+}
+
+.side-navigation li.divider:hover {
+    background-color: none;
+}
+
+
+/* ENGAGEMENT FEED */
+
+.engagement-cards {
+    border: 1px solid rgba(0, 0, 0, 0.116);
+
+    width: 600px;
+
+    box-shadow:
+        0.7px 0.6px 2.2px rgba(0, 0, 0, 0.021),
+        1.8px 1.5px 5.3px rgba(0, 0, 0, 0.032),
+        3.4px 2.8px 10px rgba(0, 0, 0, 0.04),
+        6px 4.9px 17.9px rgba(0, 0, 0, 0.047),
+        11.3px 9.2px 33.4px rgba(0, 0, 0, 0.059),
+        27px 22px 80px rgba(0, 0, 0, 0.09);
+
+}
+
+/* engagement cards */
+
+.engagement-cards-name,
+.training-cards-name,
+.interview-cards-name {
+    background-color: var(--silk);
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.recruiter-image,
+.training-image,
+.interview-image {
+    margin-left: 10px;
+    border: 4px solid var(--secondary);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.recruiter-image img,
+.training-image img,
+.interview-image img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.recruiter-name-timeposted,
+.training-name-timeposted,
+.interview-name-timeposted {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.recruiter-name,
+.training-name,
+.interview-name {
+    font-size: small;
+    color: var(--primary)
+}
+
+.time-posted {
+    font-size: 8px;
+    color: var(--black)
+}
+
+.recruiter-options,
+.training-options,
+.interview-options {
+    position: relative;
+    left: 400px;
+}
+
+.recruiter-options button,
+.training-options button,
+.interview-options button {
+    border: none;
+    color: var(--dark);
+    background-color: var(--silk);
+    cursor: pointer;
+}
+
+.engagement-cards-content {
+    height: 200px;
+    background-color: var(--clean);
+    padding: 10px;
+
+}
+
+.job-title {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.job-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.job-content .job-sum {
+    font-size: 13px;
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+.job-content .job-description {
+    font-size: 12px;
+    text-align: justify;
+    padding: 5px 15px 5px 15px;
+}
+
+.engagement-info {
+    height: 30px;
+    color: var(--primary);
+    font-size: 13px;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.hiring-company {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hiring-company img {
+    width: 150px;
+}
+
+.learn-more {
+    border: 1px solid black;
+    height: 27px;
+    width: 100px;
+    background-color: var(--clean);
+    cursor: pointer;
+}
+
+.learn-more:hover {
+    filter: brightness(110%);
+}
+
+.learn-more:active {
+    filter: brightness(90%);
+}
+
+.engagement-bottom,
+.training-bottom,
+.interview-bottom {
+    display: flex;
+    gap: 20px;
+    background-color: var(--silk);
+    height: 40px;
+
+}
+
+.engagement-bottom button {
+    border: none;
+    background-color: var(--silk);
+    cursor: pointer;
+    position: relative;
+    left: 30px
+}
+
+.engagement-bottom button:hover {
+    filter: brightness(110%);
+}
+
+.engagement-bottom button:active {
+    filter: brightness(90%);
+}
+
+.trainingcards-info {
+    height: 20px;
+    color: var(--primary);
+    font-size: 14px;
+    padding-left: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+
+}
+
+.training-cards-content {
+    position: relative;
+}
+
+.training-content img {
+    object-fit: inherit;
+    height: 100%;
+    width: 100%;
+}
+
+.training-cards-content button {
+    position: absolute;
+    bottom: 15px;
+    left: 490px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 27px;
+    width: 100px;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--clean)
+}
+
+.training-cards-content button:hover {
+    filter: brightness(110%);
+    background-color: var(--dark);
+    color: var(--clean)
+}
+
+.training-cards-content button:active {
+    filter: brightness(90%);
+}
+
+.training-bottom button {
+    border: none;
+    background-color: var(--silk);
+    cursor: pointer;
+    position: relative;
+    left: 30px
+}
+
+.training-bottom button:hover {
+    filter: brightness(110%);
+    background-color: var(--silk);
+
+}
+
+.training-bottom button:active {
+    filter: brightness(90%);
+}
+
+/* INTERVIEW CARDS */
+.interview-content {
+    padding: 10px 15px
+}
+
+.video-link-content {
+    padding-bottom: 10px;
+}
+
+.video-content-title {
+    display: flex;
+
+}
+
+.vid-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.vid-content .vid-title {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.vid-content .vid-description {
+    font-size: 13px;
+    text-align: justify;
+    padding: 5px 5px 0 0;
+}
+
+
+/* END OF ENGAGEMENT/TRAINING CARDS/INTERVIEW */
+
+/* Application Status */
+.appstatus-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+
+.appstatus {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.500);
+    border-radius: 8px;
+    width: 730px;
+    height: 80px;
+    padding: 10px 5px;
+    box-shadow:
+        1.3px 1px 4.7px -7px rgba(0, 0, 0, 0.009),
+        3.3px 2.6px 11.9px -7px rgba(0, 0, 0, 0.017),
+        6.7px 5.3px 24.3px -7px rgba(0, 0, 0, 0.024),
+        13.9px 11px 50px -7px rgba(0, 0, 0, 0.035),
+        38px 30px 137px -7px rgba(0, 0, 0, 0.06);
+}
+
+.appstats-btn:hover {
+    filter: brightness(110%);
+}
+
+.appstats-btn:active {
+    filter: brightness(90%);
+}
+
+.appstats-btn {
+    background-color: var(--grey);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    transition: var(--controls-transition);
+    color: var(--dark);
+    font-weight: bold;
+    padding: 15px;
+    font-size: 15px;
+    width: 120px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    font-family: var(--dark);
+}
+
+.appstatus li {
+    list-style-type: none;
+    font-family: var(--outfit);
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+
+
+/* Modal - Job Box */
+
+.job-information {
+    min-width: 250px;
+    max-width: 550px;
+    height: 600px;
+    background-color: var(--clean);
+    box-shadow:
+        0px 0px 3.5px rgba(0, 0, 0, 0.045),
+        0px 0px 8.4px rgba(0, 0, 0, 0.065),
+        0px 0px 15.9px rgba(0, 0, 0, 0.08),
+        0px 0px 28.4px rgba(0, 0, 0, 0.095),
+        0px 0px 53.1px rgba(0, 0, 0, 0.115),
+        0px 0px 127px rgba(0, 0, 0, 0.16);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    overflow: hidden;
+    z-index: 26;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+}
+
+.job-header {
+    border-bottom: 1px solid var(--silk);
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.job-header h1 {
+    font-family: var(--outfit);
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.job-header button {
+    outline: none;
+    border: none;
+    font-size: 30px;
+    background: none;
+    cursor: pointer;
+}
+
+.job-information .content {
+    padding: 30px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.job-information .content .summary {
+    width: 100%;
+}
+
+.job-information .content .j-summary {
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    background: none;
+    font-family: var(--poppins);
+    font-weight: 15px;
+}
+
+.job-information .button-collection {
+    padding: 20px;
+}
+
+.job-information .content .j-qualifications {
+    width: 100%;
+}
+
+.job-information .content .j-qualifications .qualification-list li {
+    font-size: 13px;
+    color: var(--dark);
+    margin: 5px 0;
+}
+
+.job-information .content p {
+    font-size: 13px;
+    font-family: var(--poppins);
+    width: 100%;
+    text-align: justify;
+}
+
+.job-labels {
+    font-weight: bold;
+    font-family: var(--poppins);
+    font-size: 25px;
+    width: 100%;
+    text-align: left;
+}
+
+.job-information.active {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 162, 255, 0.9);
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.modal-overlay.active {
+    pointer-events: all;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+.cards-container {
+    height: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cards-container::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+.engagement-card {
+    width: 500px;
+    box-shadow:
+        0px 0px 0.4px rgba(0, 0, 0, 0.042),
+        0px 0px 0.9px rgba(0, 0, 0, 0.055),
+        0px 0px 1.8px rgba(0, 0, 0, 0.064),
+        0px 0px 3.1px rgba(0, 0, 0, 0.07),
+        0px 0px 5.8px rgba(0, 0, 0, 0.076),
+        0px 0px 14px rgba(0, 0, 0, 0.08);
+    padding: 10px;
+    margin: 10px 0;
+    /* opacity: 0;
+    transition: all 0.5s ease-in-out; */
+}
+
+/* .engagement-card:nth-child(odd) {
+    transform: translateX(100%);
+}
+
+.engagement-card:nth-child(even) {
+    transform: translateX(-100%);
+} */
+
+/* .engagement-card.show {
+    transform: translateX(0);
+    opacity: 1;
+} */
+
+.engagement-card .header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid var(--fade);
+    padding-bottom: 10px;
+}
+
+.engagement-card .header .post-header {
+    text-align: left;
+    width: 75%;
+    font-size: 15px;
+}
+
+.engagement-card .header .post-header p {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.engagement-card .header .post-header h3 {
+    font-size: 17px;
+    opacity: 0.8;
+}
+
+.engagement-card .header .dots {
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    background: none;
+    border-radius: 30px;
+}
+
+.engagement-card .header .dots:active {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.engagement-card .body {
+    width: 100%;
+}
+
+.engagement-card .apply-now-btn,
+.engagement-card .enroll-now-btn {
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--clean);
+    outline: none;
+    border: none;
+    padding: 10px;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.engagement-card .details-btn,
+.save-post-btn {
+    width: 100%;
+    background-color: var(--plain);
+    color: var(--dark);
+    outline: none;
+    border: none;
+    padding: 10px;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    border: 1px solid var(--dark);
+}
+
+.engagement-card .apply-now-btn:hover {
+    background-color: var(--secondary);
+}
+
+.engagement-card .details-btn:hover {
+    background-color: var(--silk);
+}
+
+
+/* Hiring Board */
+.hiring-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: var(--milk);
+    padding: 20px 30px;
+}
+
+.hiring-board .board {
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 250px;
+    height: 130px;
+    margin: 10px 0;
+    box-shadow:
+        0px 0px 0.4px rgba(0, 0, 0, 0.026),
+        0px 0px 0.9px rgba(0, 0, 0, 0.035),
+        0px 0px 1.8px rgba(0, 0, 0, 0.04),
+        0px 0px 3.1px rgba(0, 0, 0, 0.044),
+        0px 0px 5.8px rgba(0, 0, 0, 0.047),
+        0px 0px 14px rgba(0, 0, 0, 0.05);
+}
+
+.hiring-board .board img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Profile Add Info*/
+#workExp::placeholder,
+#portFolio::placeholder,
+#educ::placeholder {
+    font-family: var(--outfit);
+    font-size: 14px;
+}
+
+.col button,
+.text-content button {
+    border: none;
+    background-color: var(--clean);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.fa-circle-plus,
+.fa-circle-check {
+    background-color: var(--clean);
+    color: var(--primary)
+}
+
+.col input,
+.text-content input,
+.text-content input {
+    border: none
+}
+
+
+
+/* Profile - Media Query */
+/* Large width: 992px */
+@media screen and (max-width:992px) {
+    .profile-box .header h1 {
+        font-size: 25px;
+    }
+
+    .profile-box {
+        width: 900px;
+        height: 600px;
+    }
+
+    .profile-box .main .right .content {
+        height: 260px;
+        width: 260px;
+    }
+
+    .content h1 {
+        font-size: 27px;
+    }
+}
+
+/* Medium width: 768px */
+@media screen and (max-width: 768px) {
+    .profile-box.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .profile-box .header {
+        justify-content: space-between;
+        align-items: center;
+
+
+    }
+
+    .profile-box .main {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        height: 800px;
+        align-content: flex-end;
+        justify-content: center;
+        gap: 50px
+    }
+
+    .profile-box {
+        width: 500px;
+        height: 900px;
+    }
+
+    .profile-box .main .left,
+    .profile-box .main .right {
+        width: 100%
+    }
+
+    .header .left {
+        display: none;
+    }
+}
+
+/* small width: 576px */
+/* @media screen and (max-width: 576px) {
+    .profile-box .header h1 {
+        font-size: 20px;
+    }
+    .profile-box.active {
+        padding: 0px
+    }
+    .profile-box {
+        width: 400px;
+        height: 550px;
+    }
+    .profile-box .main{
+        height: 400px;
+        justify-content: center;
+        gap: 10px
+    }
+    .profile-box .main .left .content {
+        width: 400px;
+    }
+    .profile-box .main .left, .profile-box .main .right {
+        width: 100%
+    }
+    .profile-box .main .right .content {
+        height: 160px;
+        width: 160px;
+    }
+    .content h1 {
+        font-size: 20px
+    }
+    .download-text {
+        margin: 0px!important;
+    }
+} */
+
+/* Engagement Media Query */
+
+/*Extra XXL width: 1600px  */
+@media screen and (max-width:1600px) {
+    .engagement-card {
+        width: 730px;
+    }
+
+    .side-navigation,
+    .hiring-board {
+        width: 400px;
+    }
+
+    .side-navigation ul {
+        width: 100%
+    }
+
+    .hiring-board .board {
+        width: 350px;
+        height: 200px;
+    }
+
+}
+
+/* Extra XL width: 1400px */
+@media screen and (max-width:1400px) {
+    .engagement-card {
+        width: 620px;
+    }
+
+    .side-navigation,
+    .hiring-board {
+        width: 350px;
+    }
+
+    .side-navigation ul {
+        width: 100%
+    }
+
+    .hiring-board .board {
+        width: 250px;
+        height: 140px;
+    }
+
+}
+
+
+/* Extra L width: 1200px */
+@media screen and (max-width: 1200px) {
+    .engagement-card {
+        width: 550px;
+    }
+
+    .side-navigation,
+    .hiring-board {
+        width: 280px;
+    }
+
+    .hiring-board .board {
+        width: 230px;
+        height: 120px;
+    }
+}
+
+/* Large width: 992px */
+@media screen and (max-width: 992px) {
+    .engagement-card {
+        width: 450px;
+    }
+
+    .hiring-board {
+        width: 235px;
+
+    }
+
+    .hiring-board .board {
+        width: 200px;
+        height: 100px;
+    }
+
+    #searchQueryInput {
+        width: 350px;
+    }
+
+    #searchQuerySubmit {
+        position: absolute;
+        left: 290px;
+    }
+}
+
+/* Medium width: 768px */
+@media screen and (max-width: 768px) {
+    .engagement-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .hiring-board {
+        display: none;
+    }
+
+    .engagement-card {
+        width: 440px
+    }
+
+    .cards-container {
+        width: 90%
+    }
+
+    .side-navigation ul li {
+        font-size: 13px;
+    }
+
+    .side-navigation li.active {
+        padding: 8px 1px;
+    }
+
+    #searchQueryInput {
+        width: 330px;
+    }
+
+    #searchQuerySubmit {
+        position: absolute;
+        left: 260px;
+    }
+
+    .user_profile {
+        width: 37px;
+        height: 37px;
+        position: relative;
+        bottom: 6px
+    }
+}
+
+/* Small width: 576px */
+@media screen and (max-width: 576px) {
+    #searchQueryInput {
+        width: 200px;
+    }
+
+    #searchQuerySubmit {
+        position: absolute;
+        left: 170px;
+    }
+
+    .engagement-card {
+        width: 320px;
+    }
+
+    .side-navigation {
+        width: 250px;
+    }
+
+    .side-navigation ul li {
+        font-size: 10.5px;
+        padding: 5px 1px;
+    }
+
+    .engagement-card .header .post-header h3 {
+        font-size: 15px;
+    }
+
+    header.main-header {
+        padding: 5px;
+        justify-content: space-evenly;
+    }
+
+    .user_profile {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        bottom: 2.4px
+    }
+
+    header.main-header .navigation-bar {
+        width: 30%
+    }
+
+}
+
+/* mobile width: 414px */
+@media screen and (max-width:414px) {
+    .side-navigation {
+        width: 200px;
+    }
+
+    .engagement-card {
+        width: 243px;
+    }
+
+    .side-navigation ul li {
+        font-size: 9px;
+        padding: 0px;
+    }
+
+    .side-post-nav i {
+        font-size: 11px;
+        padding: 0px;
+    }
+
+    .engagement-card .header .post-header h3 {
+        font-size: 12px;
+    }
+
+    .engagement-card .header .post-header p {
+        font-size: 9px;
+    }
+
+    .engagement-card .details-btn,
+    .save-post-btn {
+        width: 100%;
+        height: 35px;
+        font-size: 11px;
+
+    }
+
+    .engagement-card .apply-now-btn,
+    .engagement-card .enroll-now-btn {
+        margin-bottom: 3px;
+        ;
+    }
+
+    .user_profile {
+        width: 33px;
+        height: 33px;
+        position: relative;
+        bottom: 2px
+    }
+
+    .engagement-card .header .post-header h3 {
+        font-size: 10px;
+        padding-left: 3px;
+    }
+
+    .engagement-card .header .post-header p {
+        font-size: 9px;
+        padding-left: 3px;
+    }
+
+    .brand-container h1 {
+        display: none;
+    }
+
+    #searchQueryInput {
+        width: 150px;
+    }
+
+    #searchQuerySubmit {
+        position: absolute;
+        left: 130px;
+    }
+
+    header.main-header .navigation-bar {
+        width: 35%
+    }
+
+    .button-collection button {
+        position: relative;
+        top: 5px;
+    }
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Engage</title>
+    <!-- App Icon - SVG FORMAT -->
+    <link rel="icon" href="assets/images/logo.svg">
+
+    <!-- External CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/root.css">
+    <link rel="stylesheet" href="assets/css/signup.css">
+
+    <!-- External JS Files -->
+    <script defer type="module" src="assets/scripts/signup.js"></script>
+    <script defer type="module" src="assets/scripts/resources.js"></script>
+    <script defer type="module" src="assets/scripts/form.js"></script>
+
+    <!-- FONTS AWESOME CDN -->
+    <script src="https://kit.fontawesome.com/0e205b39a4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="showcase">
+        <div class="text-content">
+            <div class="brand-container col" data-sub="none">
+                <div class="app-logo">
+                    <img src="assets/images/logo.svg" style="width:60px;height:60px;object-fit:contain;">
+                </div>
+                <h1 class="br-text" style="margin:0;font-family:var(--outfit);color:var(--title-font-color);">ngage</h1>
+            </div>
+            <h1>Welcome to our <br>community</h1>
+            <p>Already have an account? <a>Log in</a></p>
+        </div>
+    </div>
+    <div class="form-container">
+        <div class="signup-form" name="signup-form" id="signup-form" action="#" method="post">
+            <h1>Create an account</h1>
+            <div class="row">
+                <div class="firstname-container input-container">
+                    <label for="firstname">Firstname:</label>
+                    <input type="text" name="firstname" id="firstname" class="firstname field" autocomplete="off">
+                </div>
+                <div class="lastname-container input-container">
+                    <label for="lastname">Lastname:</label>
+                    <input type="text" name="lastname" id="lastname" class="lastname field" autocomplete="off">
+                </div>
+            </div>
+            <div class="row">
+                <div class="middlename-container input-container">
+                    <label for="middlename">Middlename:</label>
+                    <input type="text" name="middlename" id="middlename" class="middlename field" autocomplete="off">
+                </div>
+                <div class="input-container birthdate-container">
+                    <label style="top:-20px;" class="birthdate-text">Birthdate:</label>
+                    <select class="birth-month selection">
+                        <option selected disabled>Month</option>
+                    </select>
+                    <select class="birth-day selection">
+                        <option selected disabled>Day</option>
+                    </select>
+                    <select class="birth-year selection">
+                        <option selected disabled>Year</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-container">
+                    <label for="email">Email</label>
+                    <input type="text" class="email field" name="email" id="email" autocomplete="off">
+                </div>
+            </div>
+            <div class="row">
+                <div class="street-container input-container">
+                    <label for="street">Street:</label>
+                    <input type="text" name="street" id="street" class="street field" autocomplete="off">
+                </div>
+                <div class="unit-flr input-container">
+                    <label for="unitNo">Unit/House No.#:</label>
+                    <input type="text" class="unitNo field" id="unitNo" name="unitNo">
+                </div>
+                <select class="sex-selection selection" style="width:100%;">
+                    <option selected disabled>Sex</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+            <div class="row">
+                <select class="city-selection selection" style="width:100%;">
+                    <option selected disabled>City</option>
+                </select>
+                <select class="province-selection selection" style="width:100%;">
+                    <option selected disabled>Province</option>
+                </select>
+                <div class="zip-container input-container">
+                    <label for="zipcode">Zip Code:</label>
+                    <input type="number" name="zipcode1" id="zipcode" class="zipcode field" autocomplete="off">
+                </div>
+            </div>
+            <div class="row">
+                <div class="password-container input-container">
+                    <label for="passsword">Password:</label>
+                    <input type="password" name="password" id="password" class="password field" autocomplete="off">
+                    <button type="button" class="new-password-toggle-btn password-toggle-btn">
+                        <i class="fa-regular fa-eye"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="confirm-password-container input-container">
+                    <label for="confirm-passsword">Confirm Password:</label>
+                    <input type="password" name="confirm-password" id="confirm-password" class="confirm-password field"
+                        autocomplete="off">
+
+                    <button type="button" class="confirm-password-toggle-btn password-toggle-btn">
+                        <i class="fa-regular fa-eye"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <input type="checkbox" class="sign-up-agreement" id="sign-up-agreement" name="sign-up-agreement">
+                <label class="agreement-text">I agree with Engage's <a href="#">Privacy Policy</a> and <a href="#">Terms
+                        &
+                        Conditions</a></label>
+            </div>
+            <div class="form-buttons">
+                <p class="error-message"> <i class="fa-solid fa-circle-exclamation" style="margin-right:5px"></i>Please
+                    fill out all necesssary
+                    fields
+                </p>
+                <button class="sign-up-cancel-btn btn-tertiary">Cancel</button>
+                <button class="sign-up-btn btn-primary">Sign up</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

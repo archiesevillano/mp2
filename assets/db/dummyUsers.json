@@ -1,0 +1,389 @@
+[
+    {
+        "userID": "Gm4Cz4m9",
+        "name": "Emily Johnson",
+        "city": "New York",
+        "portfolio": "https://www.emilyjohnsonportfolio.com",
+        "expertise": "Graphic Design",
+        "workExp": "8 years",
+        "education": "Bachelor's Degree in Fine Arts"
+    },
+    {
+        "userID": "Tq2Ff8wS",
+        "name": "Ethan Davis",
+        "city": "Los Angeles",
+        "portfolio": "https://www.ethandavisportfolio.com",
+        "expertise": "Web Development",
+        "workExp": "5 years",
+        "education": "Master's Degree in Computer Science"
+    },
+    {
+        "userID": "Vx7Nc2kH",
+        "name": "Mia Rodriguez",
+        "city": "Chicago",
+        "portfolio": "https://www.miarodriguezportfolio.com",
+        "expertise": "Digital Marketing",
+        "workExp": "3 years",
+        "education": "Bachelor's Degree in Marketing"
+    },
+    {
+        "userID": "qD6Hr9pV",
+        "name": "Liam Martinez",
+        "city": "Houston",
+        "portfolio": "https://www.liammartinezportfolio.com",
+        "expertise": "Copywriting",
+        "workExp": "10 years",
+        "education": "Bachelor's Degree in English"
+    },
+    {
+        "userID": "kS8Zt4dG",
+        "name": "Ava Williams",
+        "city": "San Francisco",
+        "portfolio": "https://www.avawilliamsportfolio.com",
+        "expertise": "UI/UX Design",
+        "workExp": "7 years",
+        "education": "Master's Degree in Design"
+    },
+    {
+        "userID": "cJ6Wp5vX",
+        "name": "William Hernandez",
+        "city": "Miami",
+        "portfolio": "https://www.williamhernandezportfolio.com",
+        "expertise": "Photography",
+        "workExp": "4 years",
+        "education": "Bachelor's Degree in Photography"
+    },
+    {
+        "userID": "tL5Fs9cE",
+        "name": "Sophia Wilson",
+        "city": "Austin",
+        "portfolio": "https://www.sophiawilsonportfolio.com",
+        "expertise": "Social Media Marketing",
+        "workExp": "6 years",
+        "education": "Bachelor's Degree in Communications"
+    },
+    {
+        "userID": "hB2Pj7wC",
+        "name": "James Garcia",
+        "city": "Philadelphia",
+        "portfolio": "https://www.jamesgarciaportfolio.com",
+        "expertise": "Video Production",
+        "workExp": "9 years",
+        "education": "Bachelor's Degree in Film"
+    },
+    {
+        "userID": "qR5Sx9pA",
+        "name": "Isabella Thompson",
+        "city": "Seattle",
+        "portfolio": "https://www.isabellathompsonportfolio.com",
+        "expertise": "Graphic Design",
+        "workExp": "5 years",
+        "education": "Bachelor's Degree in Fine Arts"
+    },
+    {
+        "userID": "fJ4oq3",
+        "name": "Benjamin Lee",
+        "city": "Denver",
+        "portfolio": "https://www.benjaminleeportfolio.com",
+        "expertise": "Web Development",
+        "workExp": "7 years",
+        "education": "Master's Degree in Computer Science"
+    },
+    {
+        "userID": "uA7pL9",
+        "name": "Olivia Rodriguez",
+        "city": "Boston",
+        "portfolio": "https://www.oliviarodriguezportfolio.com",
+        "expertise": "Digital Marketing",
+        "workExp": "6 years",
+        "education": "Bachelor's Degree in Marketing"
+    },
+    {
+        "userID": "tX9rZ6",
+        "name": "Daniel Perez",
+        "city": "New York City",
+        "portfolio": "https://danielperezdesigns.com",
+        "expertise": "Graphic Design",
+        "workExp": "Over 10 years experience",
+        "education": "Bachelor's in Graphic Design"
+    },
+    {
+        "userID": "mY1sN8",
+        "name": "Charlotte Davis",
+        "city": "Los Angeles",
+        "portfolio": "https://charlottedavisdesigns.com",
+        "expertise": "Brand Strategy",
+        "workExp": "Over 6 years experience",
+        "education": "Master's in Marketing"
+    },
+    {
+        "userID": "qD3kF9",
+        "name": "Samuel Ramirez",
+        "city": "Miami",
+        "portfolio": "https://samuelramirezdesigns.com",
+        "expertise": "Web Development",
+        "workExp": "Over 12 years experience",
+        "education": "Bachelor's in Computer Science"
+    },
+    {
+        "userID": "hS5zA1",
+        "name": "Amelia Smith",
+        "city": "Seattle",
+        "portfolio": "https://ameliasmithdesigns.com",
+        "expertise": "Product Design",
+        "workExp": "Over 4 years experience",
+        "education": "Bachelor's in Industrial Design"
+    },
+    {
+        "userID": "dN4fK2",
+        "name": "Lucas Gonzalez",
+        "city": "Austin",
+        "portfolio": "https://lucasgonzalezdesigns.com",
+        "expertise": "UI Design",
+        "workExp": "Over 7 years experience",
+        "education": "Bachelor's in Computer Science"
+    },
+    {
+        "userID": "gH8bW1",
+        "name": "Harper Wright",
+        "city": "Denver",
+        "portfolio": "https://harperwrightdesigns.com",
+        "expertise": "Branding",
+        "workExp": "Over 5 years experience",
+        "education": "Bachelor's in Marketing"
+    },
+    {
+        "userID": "pZ6qB3",
+        "name": "Alexander Flores",
+        "city": "Chicago",
+        "portfolio": "https://alexanderfloresdesigns.com",
+        "expertise": "Motion Design",
+        "workExp": "Over 9 years experience",
+        "education": "Bachelor's in Motion Graphics"
+    },
+    {
+        "userID": "bC9eX2",
+        "name": "Evelyn Martin",
+        "city": "Boston",
+        "portfolio": "https://evelynmartindesigns.com",
+        "expertise": "Illustration",
+        "workExp": "Over 3 years experience",
+        "education": "Bachelor's in Fine Arts"
+    },
+    {
+        "userID": "T2N7B3",
+        "name": "Michael Jackson",
+        "city": "Philadelphia",
+        "portfolio": "https://michaeljacksondesigns.com",
+        "expertise": "UI/UX Design",
+        "workExp": "Over 11 years experience",
+        "education": "Bachelor's in Graphic Design"
+    },
+    {
+        "userID": "W8E2D1",
+        "name": "Abigail Miller",
+        "city": "San Diego",
+        "portfolio": "https://abigailmillerdesigns.com",
+        "expertise": "Package Design",
+        "workExp": "Over 7 years experience",
+        "education": "Bachelor's in Packaging Design"
+    },
+    {
+        "userID": "W8E2D1",
+        "name": "Caleb Campbell",
+        "city": "Seattle",
+        "portfolio": "https://calebcampbell.com",
+        "expertise": "Web Development",
+        "workExp": "12 years",
+        "education": "B.S. in Computer Science"
+    },
+    {
+        "userID": "U3M1X9",
+        "name": "Audrey Hernandez",
+        "city": "San Francisco",
+        "portfolio": "https://audreyhernandez.com",
+        "expertise": "Graphic Design",
+        "workExp": "8 years",
+        "education": "B.A. in Graphic Design"
+    },
+    {
+        "userID": "P6Z8J7",
+        "name": "Dylan Cox",
+        "city": "New York",
+        "portfolio": "https://dylancoxdesigns.com",
+        "expertise": "UI/UX Design",
+        "workExp": "6 years",
+        "education": "B.S. in Design"
+    },
+    {
+        "userID": "C9T4N2",
+        "name": "Maya Green",
+        "city": "Los Angeles",
+        "portfolio": "https://mayagreendesigns.com",
+        "expertise": "Product Design",
+        "workExp": "10 years",
+        "education": "B.A. in Industrial Design"
+    },
+    {
+        "userID": "V1H6G7",
+        "name": "Jason Howard",
+        "city": "Chicago",
+        "portfolio": "https://jasonhowarddesign.com",
+        "expertise": "Graphic Design",
+        "workExp": "7 years",
+        "education": "B.A. in Graphic Design"
+    },
+    {
+        "userID": "K2B9P8",
+        "name": "Sydney Wright",
+        "city": "Seattle",
+        "portfolio": "https://sydneywrightdesign.com",
+        "expertise": "Web Design",
+        "workExp": "5 years",
+        "education": "B.A. in Web Design"
+    },
+    {
+        "userID": "L7J1T6",
+        "name": "Grayson Thomas",
+        "city": "San Francisco",
+        "portfolio": "https://graysonthomasdesign.com",
+        "expertise": "UX Design",
+        "workExp": "9 years",
+        "education": "B.S. in Human-Computer Interaction"
+    },
+    {
+        "userID": "N5V8F1",
+        "name": "Arianna Scott",
+        "city": "New York",
+        "portfolio": "https://ariannascottdesign.com",
+        "expertise": "Product Design",
+        "workExp": "8 years",
+        "education": "B.A. in Industrial Design"
+    },
+    {
+        "userID": "Z2X9M1",
+        "name": "Elijah Baker",
+        "city": "Los Angeles",
+        "portfolio": "https://elijahbakerdesign.com",
+        "expertise": "UI/UX Design",
+        "workExp": "11 years",
+        "education": "B.S. in Design"
+    },
+    {
+        "userID": "R8D6C2",
+        "name": "Leah Carter",
+        "city": "Chicago",
+        "portfolio": "https://leahcarterdesigns.com",
+        "expertise": "Graphic Design",
+        "workExp": "6 years",
+        "education": "B.A. in Graphic Design"
+    },
+    {
+        "userID": "G3K5N9",
+        "name": "Jonathan Rodriguez",
+        "city": "Seattle",
+        "portfolio": "https://jonathanrodriguezdesign.com",
+        "expertise": "Web Development",
+        "workExp": "7 years",
+        "education": "B.S. in Computer Science"
+    },
+    {
+        "userID": "J9L2F1",
+        "name": "Savannah Davis",
+        "city": "San Francisco",
+        "portfolio": "https://savannahdavisdesign.com",
+        "expertise": "Product Design",
+        "workExp": "10 years",
+        "education": "B.A. in Industrial Design"
+    },
+    {
+        "userID": "Y5B7V8",
+        "name": "Jayden Scott",
+        "city": "Miami",
+        "portfolio": "https://jaydenscottportfolio.com",
+        "expertise": "Web Design",
+        "workExp": "5 years",
+        "education": "Bachelor's degree in Computer Science"
+    },
+    {
+        "userID": "A6P4N2",
+        "name": "Savannah Thomas",
+        "city": "Los Angeles",
+        "portfolio": "https://savannahthomasportfolio.com",
+        "expertise": "Graphic Design",
+        "workExp": "8 years",
+        "education": "Associate's degree in Graphic Design"
+    },
+    {
+        "userID": "H9X7W4",
+        "name": "Nolan Reed",
+        "city": "Seattle",
+        "portfolio": "https://nolanreedportfolio.com",
+        "expertise": "UI/UX Design",
+        "workExp": "6 years",
+        "education": "Master's degree in Human-Computer Interaction"
+    },
+    {
+        "userID": "M4T6C9",
+        "name": "Kaylee Davis",
+        "city": "Austin",
+        "portfolio": "https://kayleedavisportfolio.com",
+        "expertise": "Branding",
+        "workExp": "4 years",
+        "education": "Bachelor's degree in Marketing"
+    },
+    {
+        "userID": "E2S8L5",
+        "name": "Camden Williams",
+        "city": "Chicago",
+        "portfolio": "https://camdenwilliamsportfolio.com",
+        "expertise": "Motion Graphics",
+        "workExp": "7 years",
+        "education": "Bachelor's degree in Animation"
+    },
+    {
+        "userID": "Q1K7J3",
+        "name": "Ellie Harris",
+        "city": "Denver",
+        "portfolio": "https://ellieharrisportfolio.com",
+        "expertise": "Illustration",
+        "workExp": "3 years",
+        "education": "Associate's degree in Fine Arts"
+    },
+    {
+        "userID": "B3N2V6",
+        "name": "Nathaniel Hall",
+        "city": "San Francisco",
+        "portfolio": "https://nathanielhallportfolio.com",
+        "expertise": "Photography",
+        "workExp": "9 years",
+        "education": "Bachelor's degree in Photography"
+    },
+    {
+        "userID": "F8D4R7",
+        "name": "Eva Torres",
+        "city": "New York",
+        "portfolio": "https://evatorresportfolio.com",
+        "expertise": "Social Media",
+        "workExp": "5 years",
+        "education": "Bachelor's degree in Communication"
+    },
+    {
+        "userID": "S5H6G1",
+        "name": "Tyler Howard",
+        "city": "Dallas",
+        "portfolio": "https://tylerhowardportfolio.com",
+        "expertise": "Copywriting",
+        "workExp": "8 years",
+        "education": "Bachelor's degree in English"
+    },
+    {
+        "userID": "T3M1X9",
+        "name": "Peyton Ramirez",
+        "city": "Houston",
+        "portfolio": "https://peytonramirezportfolio.com",
+        "expertise": "SEO",
+        "workExp": "6 years",
+        "education": "Bachelor's degree in Marketing"
+    }
+]

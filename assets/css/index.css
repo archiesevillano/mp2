@@ -1,0 +1,918 @@
+/* Hero Section */
+.app-logo img {
+    width:30px;
+    height:30px
+}
+.hero {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 100%;
+}
+
+.hero .wrapper .banner {
+    width: 883px;
+    height: 100%;
+    flex-shrink: 0;
+    margin: 0 20px;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    box-shadow:
+        0px 0px 2.2px rgba(0, 0, 0, 0.017),
+        0px 0px 5.3px rgba(0, 0, 0, 0.024),
+        0px 0px 10px rgba(0, 0, 0, 0.03),
+        0px 0px 17.9px rgba(0, 0, 0, 0.036),
+        0px 0px 33.4px rgba(0, 0, 0, 0.043),
+        0px 0px 80px rgba(0, 0, 0, 0.06);
+}
+
+/* Feature Section */
+.feature-section {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.feature-section h1 {
+    color: var(--secondary);
+    letter-spacing: 5px;
+    font-family: var(--outfit);
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.feature-section .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 40px 0;
+}
+
+.feature-section .wrapper .feature-card {
+    width: 300px;
+    height: 300px;
+    box-shadow:
+        0px 0px 2.2px -6px rgba(0, 0, 0, 0.02),
+        0px 0px 5.3px -6px rgba(0, 0, 0, 0.028),
+        0px 0px 10px -6px rgba(0, 0, 0, 0.035),
+        0px 0px 17.9px -6px rgba(0, 0, 0, 0.042),
+        0px 0px 33.4px -6px rgba(0, 0, 0, 0.05),
+        0px 0px 80px -6px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+    position: relative;
+}
+
+.feature-section .wrapper .feature-card .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.feature-section .wrapper .feature-card .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.feature-section .wrapper .feature-card .overlay::before {
+    width: 800px;
+    height: 1000px;
+    background: var(--primary);
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transform: rotate(45deg);
+    top: 0;
+    left: -202%;
+}
+
+.feature-section .wrapper .feature-card .overlay .text-content {
+    padding: 30px;
+}
+
+.feature-section .wrapper .feature-card .overlay .text-content p {
+    font-family: var(--outfit);
+    color: var(--clean);
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.feature-section .wrapper .feature-card .overlay .text-content p:first-child {
+    transform: translateY(20px);
+}
+
+.feature-section .wrapper .feature-card .overlay .text-content .learn-more {
+    color: var(--clean);
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 17px;
+}
+
+.feature-section .wrapper .feature-card .overlay .round-container {
+    width: 130px;
+    height: 130px;
+    background-color: var(--silk);
+    border-radius: 50%;
+    overflow: hidden;
+    transform: translate(50px, 20px);
+}
+
+.feature-section .wrapper .feature-card .overlay .round-container .round-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.subheads {
+    font-size: 45px;
+}
+
+
+
+
+
+
+/* What We Do Section */
+.what-we-do-section {
+    width: 100%;
+    height: 60vh;
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url(../images/Rectangle\ 2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.what-we-do-section .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.what-we-do-section .right .what-we-do-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    padding: 30px;
+    background-color: var(--clean);
+    box-shadow:
+        0px 0px 2.2px -6px rgba(0, 0, 0, 0.02),
+        0px 0px 5.3px -6px rgba(0, 0, 0, 0.028),
+        0px 0px 10px -6px rgba(0, 0, 0, 0.035),
+        0px 0px 17.9px -6px rgba(0, 0, 0, 0.042),
+        0px 0px 33.4px -6px rgba(0, 0, 0, 0.05),
+        0px 0px 80px -6px rgba(0, 0, 0, 0.07);
+    width: 80%;
+}
+
+.what-we-do-section .right .what-we-do-list li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.what-we-do-section .right .what-we-do-list li .list-icon {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.what-we-do-section .right .what-we-do-list li .list-icon i {
+    color: var(--secondary);
+}
+
+.what-we-do-section .right .what-we-do-list li p {
+    width: 80%;
+    font-family: var(--outfit);
+    color: var(--secondary);
+    font-size: 20px;
+}
+
+
+.what-we-do-section .left,
+.what-we-do-section .right {
+    height: 100%;
+    width: 50%;
+}
+
+.what-we-do-section .left .person-image-container {
+    height: 100%;
+    width: 300px;
+}
+
+.what-we-do-section .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.what-we-do-section .left .person-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.what-we-do-section .left p {
+    font-family: var(--outfit);
+    color: var(--secondary);
+    transform: translateY(50px);
+}
+
+.what-we-do-section .left p:first-child {
+    font-size: 20px;
+}
+
+.what-we-do-section .left b {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Partners Section */
+.partners-section {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.partners-section .left {
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+
+.partners-section .right {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners-section .right .company-partners {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.partners-section .right .company-partners img {
+    width: 250px;
+    height: 100px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.partners-section .left .text-content {
+    font-family: var(--outfit);
+    font-size: 20px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    color: var(--clean);
+    width: 80%;
+    padding: 20px;
+    z-index: 5;
+    box-shadow:
+        0px 0px 7px -79px rgba(0, 0, 0, 0.183),
+        0px 0px 16.9px -79px rgba(0, 0, 0, 0.263),
+        0px 0px 31.8px -79px rgba(0, 0, 0, 0.325),
+        0px 0px 56.7px -79px rgba(0, 0, 0, 0.387),
+        0px 0px 106.1px -79px rgba(0, 0, 0, 0.467),
+        0px 0px 254px -79px rgba(0, 0, 0, 0.65);
+}
+
+
+.partners-section .left .text-content b {
+    font-size: 65px;
+}
+
+
+
+
+
+
+
+/* Get Started Section */
+
+.get-started-section {
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--secondary);
+}
+
+.get-started-section .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.get-started-section .left .text-content {
+    width: 70%;
+    font-family: var(--outfit);
+    font-size: 40px;
+    color: var(--clean);
+}
+
+.get-started-section .left .text-content button {
+    border: 1px solid var(--clean);
+    padding: 10px;
+    width: 50%;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--dark);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NEW INDEX PAGE */
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-evenly;
+    padding: 30px 0;
+    padding-left: 120px;
+    margin-top: 50px;
+}
+
+.features h1 {
+    font-family: var(--outfit);
+}
+
+.features .partners {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    padding-left: 0;
+    gap: 30px;
+
+}
+
+.features .partners .feature-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.features .partners .image-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.features .partners .image-container .openingText {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    background: var(--clean);
+    font-family: var(--outfit);
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 15px 10px;
+}
+
+.features .partners .card .content {
+    font-family: var(--outfit);
+    margin-top: 8px;
+}
+
+.features .partners .card .content p.title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.features .partners .card .content p.sub-title {
+    font-style: italic;
+    opacity: 0.8;
+    font-size: 13px;
+}
+
+.content-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stats .items {
+    display: flex;
+    align-items: center;
+}
+
+.stats .items h3 {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 240%;
+    font-family: var(--outfit);
+    border-radius: 30px;
+    margin: 20px;
+    border: 2px solid var(--dark);
+}
+
+.stats .items p {
+    font-family: var(--outfit);
+}
+
+.stats .items p.title {
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+.stats .items p.sub-title {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+
+
+/* MEDIA QUERIES */
+
+    /* Extra XLarge Width: 1440px */
+@media screen and (max-width: 1400px) {
+    /* header */
+    .button-collections button {
+        width: 100px;
+    }
+    .page-header {
+        z-index: 2
+    }
+    /* End of header */
+
+    /* Content */
+    .hero-section .hero-text {
+        font-size: 50px;
+    }
+    .features {
+        padding-left: 90px;
+        margin-top: 27px;
+    }
+    /* End of Content */
+    /* footer */
+    .main-footer .upper .app-details ul li:first-child {
+        font-size: 23px;
+    }
+    /*End of footer */
+}
+
+    /* Extra Large width: 1200px */
+@media screen and (max-width:1200px) {
+        /* Header */
+    .button-collections button {
+        width: 90px;
+        font-size: 11px;
+    }
+    .page-header .header-nav a.active {
+        font-size: 11px;
+    }
+    .brand-container h1{
+        font-size: 27px;
+    }
+        /* End of Header */
+        
+        /* Content */
+    .page-header .header-nav a {
+        padding: 5px;
+    }
+    .hero-section {
+        height: 450px;
+    }
+    .hero-section .hero-text {
+        font-size: 40px;
+    }
+    .features {
+        padding-left: 85px;
+        margin-top: 25px;
+    }
+        /* End of Content */
+
+        /* Footer */
+    .main-footer .upper .app-details ul li:first-child  {
+        font-size: 20px;
+    }
+    .main-footer .upper .app-details ul li {
+        font-size: 12px;
+    }
+        /* End of Footer */
+}
+    /* Large width: 992px */
+@media screen and (max-width: 992px) {
+        /* Header */
+    .page-header .header-nav a {
+        font-size: 11px;
+        padding: 5px;
+    }
+    .page-header .header-nav a.active {
+        font-size: 10px;
+    }
+    .button-collections button {
+        font-size: 10px;
+        width: 73px
+    }
+        /* End of Header */
+
+        /* Content */
+    .hero-section .hero-text {
+        font-size: 35px;
+    }
+    .hero-section .hero-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        padding-left: 100px;
+        padding-top: 10px;
+        font-family: var(--outfit);
+        color: var(--clean);
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+    .hero-section {
+        height: 400px
+    }
+    .content-row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .features {
+        padding-left: 60px;
+        margin-top: 15px;
+    }
+    .features .partners {
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px;
+        gap: 30px;
+        /* End of Content */
+    }
+    .stats .items p.title {
+        font-size: 22px;
+    }
+    .stats .items p.sub-title {
+        font-size: 15px;
+    }
+    /* footer */
+    .app-logo img {
+        width: 25px;
+        height: 25px;
+    }
+    .brand-container h1 {
+        font-size: 24px;
+    }
+    .main-footer .upper .app-details ul li:first-child  {
+        font-size: 17px;
+    }
+    .main-footer .upper .app-details ul li {
+        font-size: 11px;
+    }
+    .main-footer .upper .legal-docs li a {
+        font-size: 10px;
+    }
+    .copyright-details {
+        font-size: 10px;
+    }
+    /* end of footer */
+}
+
+    /* Medium width: 768px */
+@media screen and (max-width: 768px) {
+    .page-header .header-nav , .page-header .brand-container , .page-header .button-collections{
+        display:none
+    }
+    .page-header {
+        padding: 0px;
+        width: 100%;
+        z-index: 2;
+    }
+    
+    /* HAMBURGER NAVBAR */
+   
+    .app-logo h1 {
+        color: var(--clean)
+    }
+    .topnav .app-logo {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 0px 10px 40px;
+        z-index: 2;
+        background-color: rgba(34, 34, 34, 0.800);
+    }
+    .navburgermenu {
+        display: block;
+        width: 100%;
+        margin: auto;
+        color: white;
+        border-radius: 10px;
+      }
+      .topnav {
+        overflow: hidden;
+        background-color: transparent;
+        position: relative;
+      }
+      .topnav #myLinks {
+        display: none;
+        background-color: rgba(34, 34, 34, 0.800);
+        font-family: 'Poppins', sans-serif;
+        padding: 20px;
+        font-weight: bold
+        
+      }
+      
+      .topnav a {   
+        color: var(--clean);
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+        font-weight: bold;
+      }
+      
+      .topnav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 17.5px 18px;
+        font-size: 25px;
+        display:flex;
+        justify-content: flex-end;
+      }
+     .active {
+        background-color: transparent;
+        color: white;
+      }
+      .topnav div{
+        padding: 10px;
+      }
+    /* END HAMBURGER NAVBAR */
+
+    /* Content */
+    .hero-section {
+        height: 300px;
+    }
+    .hero-section .hero-text {
+        font-size: 25px;
+        padding-top: 45px;
+    }
+    .features {
+        padding-left: 41px;
+        margin-top: 8px;
+    }
+    .features .partners {
+        width: 90%;
+    }
+    .stats .items p.title {
+        font-size: 19px;
+    }
+    .stats .items p.sub-title {
+        font-size: 14px;
+    }
+    /* End of Content */
+
+    /* Footer */
+    .main-footer .upper .legal-docs {
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction: column;
+    }
+    /* End of footer */
+}
+
+    /* Small width: 576px */
+@media screen and (max-width:576px) {
+    /* header */
+    .topnav a.icon {
+        font-size: 23px;
+    }
+    .app-logo h1 {
+        font-size: 23px;
+    }
+    .topnav a {
+        color: var(--clean);
+        padding: 7px 25px;
+        text-decoration: none;
+        font-size: 16px;
+        display: flex;
+        font-weight: bold;
+        align-content: space-around;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+    .topnav a.icon  {
+        font-size: 20px;
+        padding: 15px 20px;
+    }
+    .app-logo img {
+        height: 23px;
+        width: 23px
+    }
+    /* End of Header */
+    .hero-section {
+        height: 230px;
+        padding-left: 10px;
+    }
+    /* Content */
+    .hero-section .hero-text {
+        font-size: 17px;
+        padding-left: 15px;
+    }
+    .hero-section .hero-list {
+        font-size: 12px;
+        padding-left: 15px;
+    }
+    .features {
+        padding: 13px;
+        margin-top: 6px;
+    }
+    .features h1 {
+        font-size: 22px;
+        padding-left: 10px;
+    }
+    .features .partners {
+        width: 100%
+    }
+    .features .partners .card .content p.title {
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .stats .items p.title {
+        font-size: 16px;
+    }
+    /* End of Content */
+
+    /* Footer */
+    .main-footer .upper .app-details ul li:first-child {
+        font-size: 15px;
+    }
+    .main-footer .upper .app-details ul li {
+        font-size: 9px;
+    }
+    .main-footer .upper .legal-docs {
+        display:flex;
+        flex-direction: column;
+    } 
+    /* End footer */
+}
+
+    /* mobile width: 414px */
+@media screen and (max-width: 414px) {
+    /* NavBar */
+    .topnav a.icon{
+        font-size: 15px;
+        padding: 15px;
+    }
+    .topnav #myLinks {
+        padding: 10px;
+    }
+    .topnav a {
+        padding: 5px 27px;
+        font-size: 15px;
+    }
+    .btn-quaternary, .btn-secondary {
+        font-size: 10px;
+    }
+    .app-logo h1 {
+        font-size: 17px;
+    }
+    .app-logo img {
+        height: 20px;
+        width: 20px;
+    }
+    /* End of NavBar */
+    /* Content */
+    .hero-section {
+        height: 180px;
+        padding-left: 10px;
+    }
+    .hero-section .hero-text {
+        font-size: 13px;
+        padding: 30px 0px 0px 15px;
+    }
+    .hero-section .hero-list li {
+        margin: 2px;
+        font-size: 10px;
+    }
+    .features {
+        padding: 10px;
+        margin-top: 0px;
+    }
+    .features h1 {
+        font-size: 17.5px;
+        padding-left: 10px;
+    }
+    .features .partners {
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 60%;
+        gap: 15px;
+    }
+    .stats .items p.title {
+        font-size: 15px;
+    }
+    /* End of Content */
+   /* Footer */
+   .main-footer .upper .app-details {
+    display:flex;
+    flex-direction: column;
+    gap: 10px
+    }
+    .main-footer .upper {
+        display:flex;
+        flex-direction: column;
+    }
+    .main-footer .upper .app-details ul li {
+        font-size: 10px;
+    }
+    .main-footer .upper .legal-docs {
+        padding: 5px 0px 0px 13px
+    }
+    /* End of Footer */
+    
+}

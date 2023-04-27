@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Tab Title -->
+    <title>Engagement</title>
+
+    <!-- App Icon - SVG FORMAT -->
+    <link rel="icon" href="assets/images/logo.svg">
+
+    <!-- External CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/root.css">
+    <link rel="stylesheet" href="assets/css/engagement.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!-- External JS Files -->
+    <script defer type="module" src="assets/scripts/profile.js"></script>
+    <script defer type="module" src="assets/scripts/header.js"></script>
+    <script defer type="module" src="assets/scripts/engagement.js"></script>
+    <script defer type="module" src="assets/scripts/resources.js"></script>
+    <script defer type="module" src="assets/scripts/post.js"></script>
+
+    <!-- FONTS AWESOME CDN -->
+    <script src="https://kit.fontawesome.com/0e205b39a4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-content">
+        <header class="main-header">
+            <div class="brand-container col" data-sub="none">
+                <a href="index.html" style="text-decoration:none;cursor:default;display:flex;">
+                    <div class="app-logo">
+                        <img src="assets/images/logo.svg" style="width:30px;height:30px;object-fit:contain;">
+                    </div>
+                    <h1 style="margin:0;margin-left:3px;font-family:var(--outfit);color:var(--title-font-color);">ngage
+                    </h1>
+                </a>
+            </div>
+
+            <div class="searchBar">
+                <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="" />
+                <ul class="search-result">
+                    <li class="first-result-item"></li>
+                </ul>
+                <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="#666666"
+                            d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="navigation-bar col">
+                <div class="button-collection">
+                    <button type="button" class="main-nav-btns message-btn">
+                        <span class="material-symbols-rounded">
+                            <i class="fa-regular fa-envelope"></i>
+                        </span>
+                    </button>
+                    <button type="button" class="main-nav-btns notification-btn">
+                        <span class="material-symbols-rounded">
+                            <i class="fa-regular fa-bell"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="user_profile">
+                    <a id="user-profile-button">
+                        <img src="assets/images/placeholder.jpg">
+                    </a>
+                </div>
+                <ul class="profile-drop-down">
+                    <li>
+                        <a id="my-profile">
+                            <i class="fa-solid fa-user"></i>
+                            <p>My Profile</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-gears"></i>
+                            <p>Settings</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-bug"></i>
+                            <p>Report Bug and Feedback</p>
+                        </a>
+                    </li>
+                    <li>
+                        <hr style="border-color:#3333331c;">
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-repeat"></i>
+                            <p>Switch Account</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <p>Log out</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="notification-box">
+                    <h1 class="subheads" style="width:100%;text-transform:capitalize;text-align:left;font-size:20px;padding:15px;box-shadow:
+                0px 0.9px 0.6px rgba(0, 0, 0, 0.008),
+                0px 2.2px 1.4px rgba(0, 0, 0, 0.012),
+                0px 4.1px 2.6px rgba(0, 0, 0, 0.015),
+                0px 7.4px 4.7px rgba(0, 0, 0, 0.018),
+                0px 13.8px 8.8px rgba(0, 0, 0, 0.022),
+                0px 33px 21px rgba(0, 0, 0, 0.03)
+              ;">Notifications</h1>
+                    <div class="notif-item">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <div class="notif-body">
+                            <p class="notif-title">Training Updates</p>
+                            <p class="notif-info">You've succesfully enrolled to our program</p>
+                            <p class="notif-time"><small>34 minutes ago</small></p>
+                        </div>
+                    </div>
+                    <div class="notif-item">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <div class="notif-body">
+                            <p class="notif-title">Training Updates</p>
+                            <p class="notif-info">You've succesfully enrolled to our program</p>
+                            <p class="notif-time"><small>34 minutes ago</small></p>
+                        </div>
+                    </div>
+                    <div class="notif-item">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <div class="notif-body">
+                            <p class="notif-title">Training Updates</p>
+                            <p class="notif-info">You've succesfully enrolled to our program</p>
+                            <p class="notif-time"><small>34 minutes ago</small></p>
+                        </div>
+                    </div>
+                    <div class="notif-item">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <div class="notif-body">
+                            <p class="notif-title">Training Updates</p>
+                            <p class="notif-info">You've succesfully enrolled to our program</p>
+                            <p class="notif-time"><small>34 minutes ago</small></p>
+                        </div>
+                    </div>
+                    <div class="notif-item">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <div class="notif-body">
+                            <p class="notif-title">Training Updates</p>
+                            <p class="notif-info">You've succesfully enrolled to our program</p>
+                            <p class="notif-time"><small>34 minutes ago</small></p>
+                        </div>
+                    </div>
+                    <button type="button" class="see-all-notif-btn">See all notifications</button>
+                </div>
+                <div class="messages-box">
+                    <h1 class="subheads" style="width:100%;text-align:left;text-transform:capitalize;font-size:20px;padding:15px;box-shadow:
+                0px 0.9px 0.6px rgba(0, 0, 0, 0.008),
+                0px 2.2px 1.4px rgba(0, 0, 0, 0.012),
+                0px 4.1px 2.6px rgba(0, 0, 0, 0.015),
+                0px 7.4px 4.7px rgba(0, 0, 0, 0.018),
+                0px 13.8px 8.8px rgba(0, 0, 0, 0.022),
+                0px 33px 21px rgba(0, 0, 0, 0.03)
+              ;">Messages</h1>
+                    <div class="message-item">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-message"></i>
+                        </div>
+                        <div class="message-body">
+                            <p class="message-title">Joules Sarmiento</p>
+                            <p class="message-info">pre? check this out
+                                https://www.youtube.com/watch?v=nTASoWo0reQ&list=RDnTASoWo0reQ&start_radio=1</p>
+                            <p class="message-time"><small>6 minutes ago</small></p>
+                        </div>
+                    </div>
+                    <div class="message-item">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-message"></i>
+                        </div>
+                        <div class="message-body">
+                            <p class="message-title">Marc Osunero</p>
+                            <p class="message-info">How many projects do you have now?</p>
+                            <p class="message-time"><small>3 minutes ago</small></p>
+                        </div>
+                    </div>
+                    <button type="button" class="see-all-message-btn">See all messages</button>
+                </div>
+            </div>
+        </header>
+        <section class="engagement-content">
+            <!-- SIDE NAVIGATION -->
+            <div class="side-navigation">
+                <ul class="side-post-nav">
+                    <li class="active" data-select-type="job">
+                        <i class="fa-solid fa-house fa-xs"></i>
+                        Home
+                    </li>
+                    <li data-select-type="appStatus">
+                        <i class="fa-solid fa-newspaper fa-xs"></i>
+                        Application Status
+                    </li>
+                    <li data-select-type="savedPost">
+                        <i class="fa-solid fa-paperclip fa-xs"></i>
+                        Saved Posts
+                    </li>
+                    <li class="divider">
+                        <hr>
+                    </li>
+                    <li data-select-type="training">
+                        <i class="fa-solid fa-certificate fa-xs"></i>
+                        Training
+                    </li>
+                    <li data-select-type="interviewTips">
+                        <i class="fa-solid fa-lightbulb fa-xs"></i>
+                        Interview Tips
+                    </li>
+                    <li data-select-type="resume">
+                        <i class="fa-solid fa-file fa-xs"></i>
+                        Add new resume
+                    </li>
+                </ul>
+            </div>
+            <!-- END OF SIDE NAVIGATION -->
+            <!-- ENGAGEMENT CARDS -->
+
+            <div class="cards-container">
+
+            </div>
+
+            <!-- HIRING BOARDS -->
+            <div class="hiring-board">
+                <h1 style="text-align:left;width:100%;font-size:16px;">Advertisements</h1>
+                <div class="board">
+                    <img src="assets/images/manulife2.jpg">
+                </div>
+                <div class="board">
+                    <img src="assets/images/mcdobanner.jpg">
+                </div>
+                <div class="board">
+                    <img src="assets/images/canadabanner.jpg">
+                </div>
+                <div class="board">
+                    <img src="assets/images/concentrix banner.jpg">
+                </div>
+            </div>
+            <!-- END OF HRING BOARDS -->
+        </section>
+
+        <div class="job-information">
+            <div class="job-header">
+                <h1>Job Details</h1>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="content">
+                <section class="summary">
+                    <p class="job-labels">
+                        Job Summary
+                    </p>
+                    <p>
+                        We are seeking a highly skilled and motivated software developer to join our team. As a software
+                        developer, you will be responsible for developing and maintaining software applications,
+                        ensuring
+                        that
+                        they are functional, reliable, and meet client requirements.
+                    </p>
+                </section>
+                <section class="j-qualifications">
+                    <p class="job-labels">
+                        Job Qualifications
+                    </p>
+                    <ul class="qualification-list">
+                        <li>Design, develop, and test software applications according to specifications</li>
+                        <li>Debug and resolve issues in existing software applications</li>
+                        <li>Collaborate with cross-functional teams to identify and implement solutions</li>
+                        <li>Participate in code reviews to ensure code quality and adherence to standards</li>
+                        <li>Document software designs, testing procedures, and user guides</li>
+                        <li>Keep up to date with emerging technologies and industry trends</li>
+                        <li>Communicate effectively with team members, clients, and stakeholders</li>
+                    </ul>
+                </section>
+                <p class="job-labels">
+                    More Details:
+                </p>
+                <p class="more-job-details">
+                    If you are a self-starter who is passionate about software development and thrives in a
+                    collaborative
+                    environment, we would love to hear from you!
+                </p>
+            </div>
+            <div class="button-collection" style="display:flex;justify-content: flex-end;align-items:center;gap:20px;">
+                <button class="apply-btn btn-primary">Apply now</button>
+                <button class="save-btn btn-plain">Save Post</button>
+            </div>
+        </div>
+        <!-- Profile Box -->
+        <div class="profile-box">
+            <div class="header">
+                <div class="left">
+                    <p>Hello Again!</p>
+                </div>
+                <h1>Profile</h1>
+                <div class="right">
+                    <p class="profile-cls-btn" style="font-size:35px;cursor:pointer;">&times;</p>
+                </div>
+            </div>
+            <div class="main">
+                <div class="left">
+                    <div class="content">
+                        <h1 id="profile-name">Vinna rou Ruth</h1>
+                        <div class="upper-details">
+                            <div class="col">
+                                <p>City</p>
+                                <p id="profile-city">New Yolk City</p>
+                            </div>
+                            <div class="col" style="position: relative;">
+                                <p>Online Portfolio</p>
+
+                                <div class="btn-container">
+                                    <input type="text" id="portFolio" name="workExp" placeholder="Add item" disabled>
+                                    <button class="add-btn"><i class="fa-solid fa-circle-plus"></i></button>
+                                    <button class="edit-btn"><i class="fa-solid fa-pen"></i></button>
+                                    <button class="rem-btn"><i class="fa-solid fa-minus"></i></button>
+                                    <button class="saved-btn"><i class="fa-solid fa-circle-check"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <p id="profile-description">
+                            IT professional skilled in network administration, database management, and software
+                            development.
+                        </p>
+                        <div class="lower-details">
+                            <div class="item">
+                                <div class="icon-container">
+                                    <i class="fa-solid fa-briefcase"></i>
+                                </div>
+                                <div class="text-content">
+                                    <p>Work Experience</p>
+
+                                    <div class="btn-container">
+                                        <input type="text" id="workExp" name="workExp" placeholder="Add item" disabled>
+                                        <button><i class="fa-solid fa-circle-plus"></i></button>
+                                        <button><i class="fa-solid fa-pen"></i></button>
+                                        <button><i class="fa-solid fa-minus"></i></button>
+                                        <button><i class="fa-solid fa-circle-check"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" style="position:relative">
+                                <div class="icon-container">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+                                <div class="text-content">
+                                    <p>Education</p>
+
+                                    <div class="btn-container">
+                                        <input type="text" id="educ" name="workExp" placeholder="Add item" disabled>
+                                        <button><i class="fa-solid fa-circle-plus"></i></button>
+                                        <button><i class="fa-solid fa-pen"></i></button>
+                                        <button><i class="fa-solid fa-minus"></i></button>
+                                        <button><i class="fa-solid fa-circle-check"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="download-text"
+                            style="font-size:13px; font-weight:bold;font-family:var(--outfit); margin:30px 0;">For more
+                            details, you can
+                            download my resume and cover
+                            letter below.</p>
+                        <div class="button-collections">
+                            <button type="button" class="btn-primary">
+                                Download Resume
+                            </button>
+                            <button type="button" class="btn-primary">
+                                Download Cover Letter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="content">
+                        <img src="assets/images/recruiterImage.jpg">
+                        <div class="socials">
+                            <p style="font-size:14px;">Follow me</p>
+                            <ul class="soc-links">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-overlay"></div>
+
+</body>
+
+</html>

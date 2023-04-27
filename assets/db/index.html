@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        const generateRandomId = () => {
+            const chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            const idLength = 8; // You can adjust the length of the ID here
+
+            let randomId = '';
+            for (let i = 0; i < idLength; i++) {
+                const randomIndex = Math.floor(Math.random() * chars.length);
+                randomId += chars[randomIndex];
+            }
+
+            return randomId;
+        }
+
+        async function run() {
+            const data = await fetch("test.json");
+            let sample = await data.json();
+            const users = new Array;
+
+            for (let i = 0; i < 20; i++) {
+
+                const template = {
+                    userID: generateRandomId(),
+                    personal: {
+                        fullname: {
+                            first: sample.firstname[i],
+                            middle: sample.middlename[i],
+                            last: sample.lastname[i]
+                        },
+                        birthday: {
+                            month: sample.months[i],
+                            day: sample.day[i],
+                            year: sample.year[i]
+                        },
+                        address: {
+                            houseNo: sample.houseNo[i],
+                            street1: sample.street[i],
+                            city: sample.city[i],
+                            zip: sample.zip[i],
+                            province: sample.province[i]
+                        },
+                        sex: sample.sex[i]
+                    },
+                    credential: {
+                        email: sample.email[i],
+                        password: sample.password[i]
+                    },
+                    applicationStatus: [],
+                    savedPosts: [],
+                    posts: [],
+                    profile: {
+                        workExperience: sample.workExp[i],
+                        education: sample.education[i],
+                        introduction: sample.introduction[i],
+                        portfolioLink: sample.portfolioLink[i]
+                    },
+                    messages: [],
+                    notifications: []
+                };
+                users.push(template);
+                document.write(JSON.stringify(users));
+            }
+        }
+
+        run();
+
+    </script>
+</body>
+
+</html>

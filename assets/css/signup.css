@@ -1,0 +1,278 @@
+body {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+}
+
+.showcase,
+.form-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase {
+    background: var(--secondary);
+}
+
+.showcase .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.showcase .text-content h1 {
+    font-family: var(--poppins);
+    color: var(--clean);
+    font-size: 45px;
+    line-height: 100%;
+}
+
+.showcase .text-content p {
+    font-family: var(--poppins);
+    color: var(--clean);
+    margin: 10px 0;
+}
+
+.showcase .text-content p a {
+    text-decoration: underline;
+    color: var(--tertiary);
+}
+
+.showcase .text-content .brand-container {
+    filter: grayscale(100%) contrast(0%) brightness(500%);
+    margin-bottom: 30px;
+    transform: translateX(-10px);
+}
+
+.showcase .text-content .brand-container .br-text {
+    font-size: 80px;
+}
+
+.input-container {
+    position: relative;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: stretch;
+}
+
+.signup-form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-form h1 {
+    font-family: var(--poppins);
+    color: var(--dark);
+    width: 100%;
+    text-align: left;
+    padding: 0px 0px;
+    transform: translate(-80px, -60px);
+    font-size: 25px;
+}
+
+.signup-form .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    margin: 5px 0;
+}
+
+.signup-form .row .input-container {
+    width: 100%;
+}
+
+.input-container label {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    color: var(--dark);
+    font-family: var(--poppins);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.birthdate-container {
+    display: flex;
+    gap: 5px;
+}
+
+.form-buttons {
+    width: 100%;
+    gap: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.agreement-text {
+    font-family: var(--poppins);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.password-toggle-btn {
+    position: absolute;
+    top: 23px;
+    right: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.password-toggle-btn:active {
+    color: var(--fade);
+}
+
+.error-message {
+    color: red;
+    font-size: 13px;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    font-family: var(--outfit);
+    width: 80%;
+    display: none;
+}
+
+/* MEDIA QUERIES */
+
+/* extra large width: 1200px*/
+@media screen and (max-width: 1200px) {
+    .signup-form h1 {
+        text-align: left;
+        padding: 90px 0px 0px 20px;
+        transform: translate(-80px, -60px);
+        font-size: 25px;
+    }
+
+    .input-container label {
+        font-size: 11px;
+    }
+}
+
+/* large width : 992px */
+@media screen and (max-width: 992px) {
+    .signup-form {
+        width: 83%
+    }
+
+    .signup-form h1 {
+        text-align: left;
+        padding: 90px 0px 0px 60px;
+        font-size: 25px;
+    }
+}
+
+/* medium width: 768px */
+@media screen and (max-width: 768px) {
+    .showcase, .form-container {
+        width: 100%
+    }
+    .field {
+        margin: 5px 0;
+        padding: 6px;
+    }
+
+    .signup-form h1 {
+        font-size: 20px
+    }
+
+    .form-container form {
+        position: relative;
+        bottom: 40px;
+        width: 100%;
+
+    }
+
+    .input-container label {
+        font-size: 11px;
+    }
+
+    .birthdate-container option {
+        font-size: 2px
+    }
+
+    .signup-form h1 {
+        position: relative;
+        top: 50px;
+
+    }
+
+    .showcase {
+        display: none
+    }
+
+    .birthdate-container label {
+        font-size: 11px;
+        padding: 5px 0px 0px 2px
+    }
+
+    .fa-eye {
+        position: relative;
+        bottom: 8px;
+    }
+}
+
+/* small width: 576px */
+@media screen and (max-width: 576px) {
+    .form-container {
+        width: 100%
+    }
+
+    .form-container form {
+        width: 100%;
+        
+    }
+
+    .fa-eye {
+        position: relative;
+        bottom: 8px;
+    }
+}
+
+/* mobile width: 414px */
+@media screen and (max-width: 414px) {
+    .signup-form{
+        width: 380px
+    }
+    .form-container {
+        width: 100%;
+    }
+
+    .form-container form {
+        width: 100%;
+        position: relative;
+        left: 0px;
+        bottom: 200px;
+    }
+
+    .signup-form h1 {
+        padding-left: 80px;
+        margin-bottom: 20px;
+ 
+    }
+    .birthdate-container {
+       height: 40px;
+       width: 20px;
+    }
+}
