@@ -4,12 +4,9 @@ import { loadLogin } from "./login.js";
 
 document.addEventListener('readystatechange', e => {
     if (e.target.readyState === "complete") {
-        if (sessionStorage.getItem("userAccount")) {
-            document.querySelector('.main-content').style.display = "block";
-        }
-    }
-    else {
-        console.log("Error Occured!");
+
+        document.querySelector('.main-content').style.display = "block";
+
     }
 });
 
